@@ -4,7 +4,7 @@ from common import *
 # Ensure API keys are set
 if not all(
     key in st.session_state
-    for key in ["Exa Key", "Serper Key", "OpenAI Key", "Gemini Key", "Anthropic Key"]
+    for key in ["Exa Key", "Serper Key", "OpenAI Key"]
 ):
     st.error("Please go back to the first page and enter API keys.")
     st.stop()
